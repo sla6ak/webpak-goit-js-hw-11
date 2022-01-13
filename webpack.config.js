@@ -22,7 +22,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
-        publicPath: "/webpak-linux/",
+        publicPath: "/webpak-goit-js-hw-11/",
     },
     plugins: [
         new HtmlWebpackPlugin({
