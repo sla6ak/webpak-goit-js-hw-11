@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Homework 11</title>
   </head>
-  <body id="id456" class="body">
-    <header class="header conteiner">Logo</header>
-    <main class="content">
-      <h1>Рабочая зона</h1>
+  <body class="body">
+    <form class="search-form" id="search-form">
+      <input
+        id="inputimg"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">Search</button>
+    </form>
+    <main class="main">
+      <div class="gallery" id="render"></div>
     </main>
-    <footer class="footer conteiner">Адресс</footer>
+
+    <footer>
+      <button type="button" class="load-more">Load more</button>
+    </footer>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>

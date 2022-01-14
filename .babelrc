@@ -1,5 +1,10 @@
 // .babelrc
 {
-    "presets": ["@babel/preset-env"],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
-  }
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "exclude": ["transform-async-to-generator", "transform-regenerator"], "loose": true }
+    ]
+  ],
+  "plugins": [["module:fast-async", { "spec": true }], ["@babel/plugin-proposal-class-properties"]]
+}
