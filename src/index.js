@@ -1,6 +1,5 @@
 import './style/main.scss';
 console.log('start');
-// import '@babel/polyfill';
 import { scroll } from './js/scroll';
 import { remove } from './js/htmlRemove';
 import { addImg } from './js/htmlRender';
@@ -33,7 +32,8 @@ async function onFetchForm(e) {
       } else {
         Notiflix.Notify.success(`Hooray! We found ${arrImg.totalHits} images.`);
       }
-    } catch {
+    } catch (clientMessage) {
+      console.log(clientMessage);
       Notiflix.Notify.error('Error catch');
     }
     if (arrImg.totalHits > sendImg.pages) {
@@ -57,11 +57,12 @@ async function onFetchForm(e) {
               } images.`,
             );
           }
-        } catch {
+        } catch (clientMessage) {
+          console.log(clientMessage);
           Notiflix.Notify.error('Error catch');
         }
       }
     }
   }
-  clientMessage(send, sendImg.numberPages);
+  // clientMessage(send, sendImg.numberPages);
 }

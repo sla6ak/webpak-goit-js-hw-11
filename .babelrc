@@ -6,5 +6,6 @@
       { "exclude": ["transform-async-to-generator", "transform-regenerator"], "loose": true }
     ]
   ],
-  "plugins": [["module:fast-async", { "spec": true }], ["@babel/plugin-proposal-class-properties"]]
+  "plugins": [["module:fast-async", { "spec": true }]]
 }
+// , ["@babel/plugin-proposal-class-properties"]
